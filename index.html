@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Alma Rock</title>
+    <title>Layout Alma Rock</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
 
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="shortcut icon"
       href="assets/img/Logo alma.png"
@@ -26,110 +30,119 @@
     />
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <article>
+    <nav>
+      <div class="menu">
+        <img src="assets/img/Logo alma.png" alt="Logo marca" />
+        <h1>Alma Rock</h1>
+
+        <ul>
+          <li><a href="#new-collection">New Collection</a></li>
+          <li><a href="#t-shirt">T-shirt</a></li>
+          <li><a href="#contacts">Contáctanos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="filter">
+        <p>Ordenar por:</p>
+        <select>
+          <option value="precio">Precio</option>
+        </select>
+      </div>
+    </header>
+
+    <article>
+      <h1 id="new-collection">New Collection</h1>
+
+      <div class="objetos" id="productos">
+        <div class="card" id="new-collection">
+          <img src="assets/img/falda.jpeg" alt=" " />
+          <p>Falda color negro con botones</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card" id="new-collection">
+          <img src="assets/img/chaquetas.jpeg" alt="" />
+          <p>Chaqueta color gris con rayas rojas y negras</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card" id="new-collection">
+          <img src="assets/img/faldas .jpeg" alt="" />
+          <p>Falda color salmon ajustada</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card" id="new-collection">
+          <img src="assets/img/poleras .jpeg" alt="" />
+          <p>Polera color negra con estampado</p>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card">
           <img
-            src="assets/img/Logo alma.png"
-            alt="Logo representativo de la marca"
+            src="assets/img/polera ac-dc.png"
+            alt="Polera grupo musical ac-dc"
           />
-        </article>
+          <p>Polera AC/DC</p>
+          <button>Comprar</button>
+        </div>
 
-        <article>
-          <h1>ALMA ROCK</h1>
-        </article>
-        <article>
-            <a href="#new_collection">
-                <h1>New Collection</h1>
-            </a>
-            <a href="#t-shirts"> 
-                <h1>T-Shirts</h1>
-            </a>
-            <a href="#music">
-                <h1>Music</h1>
-            </a>
-            <a href="#contact">
-                <h1>Contact</h1>
-            </a>
-        </article>
-</nav>
+        <div class="card">
+          <img
+            src="assets/img/polera motorhead.png"
+            alt="Polera grupo musical Motorhead"
+          />
+          <p>Polera Motorhead</p>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/polera pink .png"
+            alt="Polera grupo musical pink Floyd"
+          />
+          <p>Polera Pink Floyd</p>
+          <button>Comprar</button>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/polera rolling.png"
+            alt="Polera grupo musical rolling stones"
+          />
+          <p>Polera Rolling Stones</p>
+          <button>Comprar</button>
+        </div>
+      </div>
 
-    <main>
-<article>
-    <section>
-        <h1>New Collection</h1>
-    </section>
-    <section>
-        <img src="assets/img/vestidos.jpeg" alt="fotografia de vestido negro">
-    </section>
-    <section>
-        <img src="assets/img/falda.jpeg" alt="fotografia de conjunto de falda negra con polera blanca ">
-    </section>
-<section>
-    <img src="assets/img/chaquetas.jpeg" alt="fotografia de conjunto de blazer con jeans">
-</section>
-<section>
-    <img src="assets/img/faldas .jpeg" alt="fotografia falda color naranh¡jo con polera negra">
-</section>
-<section>
-    <img src="assets/img/faldas2.jpeg" alt="fotografia falda tapizada con chaleco negro ">
-</section>
-</article>
-   
-<article>
-    <section>
-        <h1>T-Shirts</h1>
-    </section>
-    <section>
-        <img src="assets/img/Polera led zeppellin.png" alt="polera grupo musical led zeppellin ">
-    </section>
-    <section>
-        <img src="assets/img/polera pink .png" alt="polera grupo musical pink floyd">
-    </section>
-    <section>
-        <img src="assets/img/polera rolling.png" alt="polera grupo musical rolling stones">
-    </section>
-    <section>
-        <img src="assets/img/polera ac-dc.png" alt="polera grupo musicial ac-dc">
-    </section>
-    <section>
-        <img src="assets/img/polera motorhead.png" alt="polera grupo musical motorhead">
-    </section>
-</article>
-
-<article>
-    <section>
-        <h1>Music</h1>
-    </section>
-
-    <section>
-        <img src="assets/img/limpbizkit.png" alt="fotografia alusiva a la banda musical limpbizkit">
-    </section>
-
-    <section>
-        <img src="assets/img/linkinpark.png" alt="fotografia alusiva a la banda musical linkinpark">
-    </section>
-
-    <section>
-        <img src="assets/img/metallica2.png" alt="fotografia alusiva a la banda musical metallica">
-    </section>
-
-    <section>
-        <img src="assets/img/systemofadown.png" alt="fotografia alusiva a la banda musical systemofadown">
-    </section>
-</article>
-
-    </main>
+      <h1 id="t-shirt">T-shirts</h1>
+    </article>
 
     <footer>
-        <section></section>
-
-    <section>
-        <a href="https://www.pinterest.cl/pin/140806230585392/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest fa-2xl"></i></a>
-        <a href="https://www.youtube.com/watch?v=tAGnKpE4NCI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube fa-2xl"></i></a>
-        <a href="https://www.instagram.com/polerasderock/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-    </section>
+      <div id="contacts">
+        <p>Contáctanos</p>
+        <p>Alma de Rock, Rocker@ por siempre</p>
+      </div>
+      <div class="icons">
+        <a
+          href="https://www.instagram.com/polerasderock/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-instagram fa-lg"></i
+        ></a>
+        <a
+          href="https://www.pinterest.cl/pin/399342691971305057/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-pinterest fa-lg"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/watch?v=tAGnKpE4NCI&list=FLhnVTlxCryQZD2wcBvJkYGA&index=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-brands fa-youtube fa-lg"></i
+        ></a>
+      </div>
     </footer>
-    </div>
   </body>
 </html>
