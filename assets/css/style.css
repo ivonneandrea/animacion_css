@@ -1,6 +1,224 @@
-*{
-   background-color: brown;
-   font-family: 'Playpen Sans', cursive;
-   margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
 
+body {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "header"
+    "article"
+    "footer";
+  grid-template-areas: 1fr 1fr 3fr 1fr;
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  grid-area: nav;
+  background-color: brown;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vh;
+}
+.filter{
+  background-color: gainsboro;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: brown;
+  color: white;
+
+}
+
+.menu ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  justify-content: end;
+  
+}
+.menu img {
+  width: 50px;
+  height: 50px;
+  animation: rotate 5s ease both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25%,
+  75% {
+    filter: opacity(50%);
+  }
+  50% {
+    transform: rotate(360deg);
+    filter: opacity(15%);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+h1 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  align-content: center;
+}
+
+h1:hover{
+  transition: 4s ease;
+  color: blueviolet;
+  cursor: default;
+}
+
+ul {
+  display: flex;
+  margin: 15px;
+}
+
+ul li {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 15px;
+}
+
+.article {
+  display: grid;
+  grid-area: display;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+  background-color: brown;
+}
+
+article h1 {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+}
+
+.card{
+  text-align: center;
+}
+
+button {
+  padding: 10px 10px;
+  flex-direction: row;
+  border-radius: 5%;
+  color: white;
+  background-color: brown;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.icons {
+  background-color: black;
+  padding-top: 10px;
+}
+
+@media (min-width: 576px) {
+  body {
+    display: grid;
+    grid-template-rows: 12% 1fr 11%;
+    grid-template-columns: 15% 85%;
+    grid-template-areas:
+      "nav header"
+      "nav article"
+      "footer footer";
+    margin: 0;
+  }
+  nav {
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: black;
+    background-color: brown;
+  }
+
+  .menu {
+    display: block;
+    background-color: brown;
+  }
+  .menu img {
+    width: 70%;
+    height: 60%;
+  }
+
+  .menu ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .menu ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+
+  .filter {
+    height: 85px;
+    background-color: gainsboro;
+  }
+
+  .objetos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "producto producto producto producto"
+      "producto producto producto producto";
+  }
+  .card {
+    padding: 10px;
+    object-fit: cover;
+    text-align: center;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    transition: 2s ease;
+    filter: none;
+  }
+
+  .card img {
+ 
+    filter: grayscale(100%);
+    transition: 2s ease;
+  }
 }
